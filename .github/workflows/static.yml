@@ -41,7 +41,7 @@ jobs:
         uses: cedvdb/action-flutter-build-web@v1
         with:
           working-directory: './'
-          build-cmd: flutter build web --output="menu" --base-href="/sacctol/menu/"
+          build-cmd: flutter build web --output="menu" --base-href="/sacctol/"
        
       - name: Setup Pages
         uses: actions/configure-pages@v4
