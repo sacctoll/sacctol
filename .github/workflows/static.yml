@@ -31,7 +31,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+
+      - name: Install Flutter
+        uses: britannio/action-install-flutter@v1.1
+        with:
+          version: 3.16.5
+          
+      - name: flutter-build-web
+        uses: cedvdb/action-flutter-build-web@v1
+        with:
+          working-directory: './'
+          build-cmd: flutter build web --output="menu" --base-href="/sacctol/menu/"
+       
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
@@ -39,25 +50,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: '.'
-
-      - name: Install Flutter
-        uses: britannio/action-install-flutter@v1.1
-        with:
-          version: 3.16.5
-          
-      # - name: flutter-build-web
-      #   uses: cedvdb/action-flutter-build-web@v1
-      #   with:
-      #     working-directory: './'
-      #     build-cmd: flutter build web --output="build" --base-href="/sacctol/build/"
-       
-      - name: Flutter Build
-        uses: AcmeSoftwareLLC/flutter-build@v1.0.1
-        with:
-          platform: web
-          base-href: "/sacctol/build/"
-          working-directory: '.'
+          path: 'menu/'
                   
       - name: Deploy to GitHub Pages
         id: deployment
