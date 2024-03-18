@@ -46,12 +46,19 @@ jobs:
         with:
           version: 3.16.5
           
-      - name: flutter-build-web
-        uses: cedvdb/action-flutter-build-web@v1
+      # - name: flutter-build-web
+      #   uses: cedvdb/action-flutter-build-web@v1
+      #   with:
+      #     working-directory: './'
+      #     build-cmd: flutter build web --output="build" --base-href="/sacctol/build/"
+       
+      - name: Flutter Build
+        uses: AcmeSoftwareLLC/flutter-build@v1.0.1
         with:
-          working-directory: './'
-          build-cmd: flutter build web --output="build" --base-href="/sacctol/build/"
-
+          platform: web
+          base-href: "/sacctol/build/"
+          working-directory: '.'
+                  
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
