@@ -50,7 +50,7 @@ jobs:
         uses: cedvdb/action-flutter-build-web@v1
         with:
           working-directory: './'
-          build-cmd: flutter build web --output="web_output" --base-href="/sacctol/web_output/"
+          build-cmd: flutter build web --output="build" --base-href="/sacctol/build/"
 
       - name: Deploy to GitHub Pages
         id: deployment
