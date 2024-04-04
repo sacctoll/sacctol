@@ -83,35 +83,37 @@ class MenuPage extends StatelessWidget {
           'https://cdn.iconscout.com/icon/premium/png-512-thumb/crepe-2757573-2292622.png?f=webp&w=256',
       name: 'Crepe',
       ourMenuItems: [
-        MenuItem(name: 'Nutella', price: '250,000 L.L'),
-        MenuItem(name: 'Kinder', price: '270,000 L.L'),
-        MenuItem(name: 'Lotus', price: '270,000 L.L'),
-        MenuItem(name: "Hershey's", price: '280,000 L.L'),
-        MenuItem(name: 'Dr. Food\n Flio', price: '200,000 L.L'),
-        MenuItem(name: 'Sushi Crepe', price: '500,000 L.L'),
-        MenuItem(name: 'Fettuccine', price: '350,000 L.L'),
+        MenuItem(name: 'Nutella', price: '3.4 \$'),
+        MenuItem(name: 'Kinder', price: '3.8 \$'),
+        MenuItem(name: 'Lotus', price: '3.6 \$'),
+        MenuItem(name: "Hershey's", price: '3.8 \$'),
+        MenuItem(name: 'Dr. Food\n Flio', price: '2.82 \$'),
+        MenuItem(
+            name: 'Sushi Crepe\n(Served with cup\nof Chocolate)',
+            price: '0.8 \$'),
+        MenuItem(name: 'Fettuccine', price: '5 \$'),
+        MenuItem(name: 'Pancake', price: '5 \$'),
       ],
       addsItems: [
         AddsItem(
           name: 'Snickers, Mars,\nTwix or Kitkat',
-          price: '100,000 L.L',
+          price: '0.9 \$',
         ),
-        AddsItem(name: 'Flake', price: '50,000 L.L'),
-        AddsItem(name: "M&M's", price: '70,000 L.L'),
-        AddsItem(name: 'Galaxy', price: '100,000 L.L'),
-        AddsItem(name: 'Brownies', price: '60,000 L.L'),
-        AddsItem(name: 'Milka Oreo', price: '100,000 L.L'),
-        AddsItem(name: 'Nutella or\n Lotus', price: '100,000 L.L'),
-        AddsItem(name: 'Kinder Bar', price: '30,000 L.L'),
+        AddsItem(name: 'Flake', price: '0.57 \$'),
+        AddsItem(name: "M&M's", price: '0.85 \$'),
+        AddsItem(name: 'Galaxy', price: '0.9 \$'),
+        AddsItem(name: 'Brownies', price: '0.68 \$'),
+        AddsItem(name: 'Milka Oreo', price: '1.13 \$'),
+        AddsItem(name: 'Nutella or\n Lotus', price: '1.13 \$'),
+        AddsItem(name: 'Kinder Bar', price: '0.3 \$'),
         AddsItem(
           name: "Peanut Butter\nor Hershey's",
-          price: '100,000 L.L',
+          price: '1.13 \$',
         ),
-        AddsItem(name: 'Banana', price: '50,000 L.L'),
-        AddsItem(name: 'Strawberry', price: '100,000 L.L'),
-        AddsItem(name: 'Nuts', price: '50,000 L.L'),
-        AddsItem(name: 'Oreo', price: '50,000 L.L'),
-        AddsItem(name: 'Lotus', price: '50,000 L.L'),
+        AddsItem(name: 'Banana', price: '0.57 \$'),
+        AddsItem(name: 'Strawberry', price: '1.13 \$'),
+        AddsItem(name: 'Oreo', price: '0.57 \$'),
+        AddsItem(name: 'Lotus', price: '0.29 \$'),
       ],
     ),
     Category(
@@ -146,54 +148,47 @@ class MenuPage extends StatelessWidget {
         ],
         ourMenuItems: [
           MenuItem(
-              name: 'Strawberry', price: 'M: 250,000 L.L \nL: 350,000 L.L'),
-          MenuItem(name: 'oreo', price: 'M: 250,000 L.L \nL: 350,000 L.L'),
-          MenuItem(name: 'Lotus', price: 'M: 250,000 L.L \nL: 350,000 L.L'),
-          MenuItem(name: 'Chocolate', price: 'M: 250,000 L.L \nL: 350,000 L.L'),
-          MenuItem(name: 'Caramel', price: 'M: 250,000 L.L \nL: 350,000 L.L'),
+              name: 'Strawberry', price: 'M: 250,000 L.L \n L: 350,000 L.L'),
+          MenuItem(name: 'oreo', price: 'M: 250,000 L.L \n L: 350,000 L.L'),
+          MenuItem(name: 'Lotus', price: 'M: 250,000 L.L \n L: 350,000 L.L'),
           MenuItem(
-              name: 'Bubble Gum', price: 'M: 250,000 L.L \nL: 350,000 L.L'),
-          MenuItem(name: 'Protien', price: 'M: 250,000 L.L \nL: 350,000 L.L'),
+              name: 'Chocolate', price: 'M: 250,000 L.L \n L: 350,000 L.L'),
+          MenuItem(name: 'Caramel', price: 'M: 250,000 L.L \n L: 350,000 L.L'),
+          MenuItem(
+              name: 'Bubble Gum', price: 'M: 250,000 L.L \n L: 350,000 L.L'),
+          MenuItem(name: 'Protien', price: 'M: 250,000 L.L \n L: 350,000 L.L'),
         ]),
     Category(
       imageUrl:
           'https://cdn.iconscout.com/icon/premium/png-512-thumb/smoothie-136-745926.png?f=webp&w=256',
       name: 'Smoothies',
       ourMenuItems: [
-        MenuItem(name: 'Strawberry', price: 'M: 200,000 L.L \nL: 300,000 L.L'),
-        MenuItem(name: 'Peach', price: 'M: 200,000 L.L \nL: 300,000 L.L'),
+        MenuItem(name: 'Strawberry', price: 'M: 200,000 L.L \n L: 300,000 L.L'),
+        MenuItem(name: 'Peach', price: 'M: 200,000 L.L \n L: 300,000 L.L'),
         MenuItem(
-            name: 'Dragon Fruit', price: 'M: 200,000 L.L \nL: 300,000 L.L'),
-        MenuItem(name: 'Lemonade', price: 'M: 200,000 L.L \nL: 300,000 L.L'),
+            name: 'Dragon Fruit', price: 'M: 200,000 L.L \n L: 300,000 L.L'),
+        MenuItem(name: 'Lemonade', price: 'M: 250,000 L.L \n L: 350,000 L.L'),
         MenuItem(
-            name: 'Minted Lemonade', price: 'M: 200,000 L.L \nL: 300,000 L.L'),
+            name: 'Minted\nLemonade',
+            price: 'M: 250,000 L.L \n L: 350,000 L.L'),
       ],
-      addsItems: [
-        AddsItem(
-          name: 'Whipped Cream\n on Top',
-          price: '50,000 L.L',
-        ),
-        AddsItem(
-          name: 'Syrup',
-          price: '30,000 L.L',
-        ),
-        AddsItem(
-          name: 'Sauce',
-          price: '30,000 L.L',
-        ),
-        AddsItem(
-          name: 'Biscuits',
-          price: '30,000 L.L',
-        ),
-        AddsItem(
-          name: 'Candies',
-          price: '50,000 L.L',
-        ),
-        AddsItem(
-          name: 'Fruits',
-          price: '50,000 L.L',
-        ),
+      addsItems: [],
+    ),
+    Category(
+      name: 'Fresh Juices',
+      ourMenuItems: [
+        MenuItem(
+            name: 'Cocktail',
+            price: 'M: 200,000 L.L\n L: 300,000 L.L\n1L: 550,000L.L'),
+        MenuItem(name: 'Strawberry', price: 'M: 150,000 L.L\n L: 250,000 L.L'),
+        MenuItem(name: 'Mango', price: 'M: 150,000 L.L\n L: 250,000 L.L'),
+        MenuItem(
+            name: 'Orange',
+            price: 'M: 100,000 L.L\n L: 150,000 L.L\n1L: 200,000L.L'),
       ],
+      imageUrl:
+          'https://cdn.iconscout.com/icon/premium/png-512-thumb/juice-185-357899.png?f=webp&w=256',
+      addsItems: [AddsItem(name: ' ', price: ' ')],
     ),
     Category(
         imageUrl:
@@ -220,6 +215,19 @@ class MenuPage extends StatelessWidget {
         addsItems: []),
     Category(
         imageUrl:
+            'https://cdn.iconscout.com/icon/premium/png-512-thumb/cheesecake-1616885-1372392.png?f=webp&w=256',
+        name: 'Special\nCheeseCake',
+        ourMenuItems: [
+          MenuItem(name: 'Lotus', price: '250,000 L.L'),
+          MenuItem(name: 'Snickers', price: '250,000 L.L'),
+          MenuItem(name: 'Strawberry', price: '250,000 L.L'),
+          MenuItem(name: 'Oreo', price: '250,000 L.L'),
+          MenuItem(name: 'Kinder', price: '250,000 L.L'),
+          MenuItem(name: 'Galaxy', price: '250,000 L.L'),
+        ],
+        addsItems: []),
+    Category(
+        imageUrl:
             'https://cdn.iconscout.com/icon/premium/png-512-thumb/cupcake-150-503568.png?f=webp&w=256',
         name: 'Cup',
         ourMenuItems: [
@@ -231,7 +239,55 @@ class MenuPage extends StatelessWidget {
           MenuItem(name: 'Karimix', price: 'M: 200,000 L.L\n3L: 00,000 L.L'),
         ],
         addsItems: []),
-
+    Category(
+        name: 'Ice Cream',
+        addsItems: [
+          AddsItem(name: 'Achta', price: '50,000 L.L'),
+          AddsItem(name: 'Cones', price: '50,000 L.L'),
+        ],
+        ourMenuItems: [
+          MenuItem(name: 'Small Cone', price: '100,000 L.L'),
+          MenuItem(name: 'Mix Cone', price: '200,000 L.L'),
+          MenuItem(name: 'Large Cone', price: '250,000 L.L'),
+          MenuItem(name: 'One Boule', price: '100,000 L.L'),
+          MenuItem(name: 'Achta Cone', price: '300,000 L.L'),
+          MenuItem(name: '500 G Mix', price: '450,000 L.L'),
+          MenuItem(name: '1kg Mix', price: '900,000 L.L'),
+          MenuItem(name: '1kg Achta', price: '1,350,000 L.L'),
+        ],
+        imageUrl:
+            'https://cdn.iconscout.com/icon/premium/png-512-thumb/ice-cream-442-978592.png?f=webp&w=256'),
+    Category(
+      name: 'Candies',
+      ourMenuItems: [
+        MenuItem(name: '150g', price: '100,000 L.L'),
+        MenuItem(name: 'Gelatine\n Cup', price: '100,000 L.L'),
+        MenuItem(name: 'Eyes Cup', price: '130,000 L.L'),
+      ],
+      imageUrl:
+          'https://cdn.iconscout.com/icon/premium/png-512-thumb/candies-2641618-2189665.png?f=webp&w=256',
+      addsItems: [],
+    ),
+    Category(
+      name: 'Merry Cream',
+      ourMenuItems: [
+        MenuItem(name: 'Small Cone', price: '100,000 L.L'),
+        MenuItem(name: 'Large Cone', price: '200,000 L.L'),
+        MenuItem(name: 'Oreo Cup', price: '200,000 L.L'),
+        MenuItem(name: 'Lotus Cup', price: '200,000 L.L'),
+        MenuItem(name: 'Strawberry Cup', price: '200,000 L.L'),
+        MenuItem(name: 'Kinder Cup', price: '250,000 L.L'),
+      ],
+      imageUrl:
+          'https://cdn.iconscout.com/icon/premium/png-512-thumb/ice-cream-2115998-1802281.png?f=webp&w=256',
+      addsItems: [
+        AddsItem(name: 'Fruit', price: '50,000 L.L'),
+        AddsItem(name: 'Biscuit', price: '50,000 L.L'),
+        AddsItem(name: 'Surup', price: '20,000 L.L'),
+        AddsItem(name: 'Candies', price: '50,000 L.L'),
+        AddsItem(name: 'Whipped\n Cream', price: '50,000 L.L'),
+      ],
+    ),
     // Add more categories as needed
   ];
 
@@ -239,8 +295,8 @@ class MenuPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget w = const Image(
       image: AssetImage('imagess/logo.jpg'),
-      width: 150,
-      height: 150,
+      width: 120,
+      height: 120,
     );
     return Scaffold(
         backgroundColor: Color.fromARGB(255, 253, 242, 186),
@@ -250,7 +306,7 @@ class MenuPage extends StatelessWidget {
               child: Center(child: w)),
           Expanded(
             child: GridView.count(
-              crossAxisCount: 2,
+              crossAxisCount: 3,
               children: categories
                   .map(
                     (category) => GestureDetector(
@@ -273,16 +329,17 @@ class MenuPage extends StatelessWidget {
                         ),
                         child: Center(
                             child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Image.network(
                               category.imageUrl,
-                              height: 70,
-                              width: 70,
+                              height: 50,
+                              width: 50,
                             ),
                             Text(
                               category.name,
                               style: const TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.w600),
+                                  fontSize: 12, fontWeight: FontWeight.w500),
                             ),
                           ],
                         )
@@ -335,12 +392,12 @@ class ItemListPage extends StatelessWidget {
                   ),
                   Container(
                       padding: const EdgeInsets.symmetric(
-                        horizontal: 5,
-                        vertical: 5,
+                        horizontal: 1,
+                        vertical: 1,
                       ),
                       margin: const EdgeInsets.symmetric(
-                        horizontal: 5,
-                        vertical: 5,
+                        horizontal: 1,
+                        vertical: 1,
                       ),
                       decoration: BoxDecoration(
                           color: Color.fromARGB(255, 253, 242, 186),
@@ -355,8 +412,10 @@ class ItemListPage extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text(item.name),
-                                  Text(item.price),
+                                  Text(item.name,
+                                      style: TextStyle(fontSize: 13)),
+                                  Text(item.price,
+                                      style: TextStyle(fontSize: 13)),
                                 ],
                               )),
                             )
@@ -372,12 +431,12 @@ class ItemListPage extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 5,
+                      horizontal: 4,
+                      vertical: 4,
                     ),
                     margin: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 10,
+                      horizontal: 4,
+                      vertical: 4,
                     ),
                     decoration: BoxDecoration(
                         color: Color.fromARGB(255, 253, 242, 186),
@@ -391,8 +450,9 @@ class ItemListPage extends StatelessWidget {
                                 title: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(item.name),
-                                Text(item.price),
+                                Text(item.name, style: TextStyle(fontSize: 13)),
+                                Text(item.price,
+                                    style: TextStyle(fontSize: 13)),
                               ],
                             )),
                           )
