@@ -242,18 +242,18 @@ class MenuPage extends StatelessWidget {
     Category(
         name: 'Ice Cream',
         addsItems: [
-          AddsItem(name: 'Achta', price: '50,000 L.L'),
+          AddsItem(name: 'Achta', price: '90,000 L.L'),
           AddsItem(name: 'Cones', price: '50,000 L.L'),
         ],
         ourMenuItems: [
           MenuItem(name: 'Small Cone', price: '100,000 L.L'),
-          MenuItem(name: 'Mix Cone', price: '200,000 L.L'),
+          MenuItem(name: 'Mix Cone', price: '250,000 L.L'),
           MenuItem(name: 'Large Cone', price: '250,000 L.L'),
           MenuItem(name: 'One Boule', price: '100,000 L.L'),
           MenuItem(name: 'Achta Cone', price: '300,000 L.L'),
           MenuItem(name: '500 G Mix', price: '450,000 L.L'),
-          MenuItem(name: '1kg Mix', price: '900,000 L.L'),
-          MenuItem(name: '1kg Achta', price: '1,350,000 L.L'),
+          MenuItem(name: '1kg Mix', price: '1,080,000 L.L'),
+          MenuItem(name: '1kg Achta', price: '1,260,000 L.L'),
         ],
         imageUrl:
             'https://cdn.iconscout.com/icon/premium/png-512-thumb/ice-cream-442-978592.png?f=webp&w=256'),
