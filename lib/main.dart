@@ -22,7 +22,7 @@ class MenuPage extends StatelessWidget {
       ourMenuItems: [
         MenuItem(
           name: 'Espresso',
-          price: '50,000 L.L',
+          price: '60,000 L.L',
         ),
         MenuItem(name: 'Espresso Macchiato', price: '100,000 L.L'),
         MenuItem(name: 'Americano', price: '150,000 L.L'),
