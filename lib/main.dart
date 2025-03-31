@@ -22,7 +22,7 @@ class MenuPage extends StatelessWidget {
       ourMenuItems: [
         MenuItem(
           name: 'Espresso',
-          price: '60,000 L.L',
+          price: '50,000 L.L',
         ),
         MenuItem(name: 'Espresso Macchiato', price: '100,000 L.L'),
         MenuItem(name: 'Americano', price: '150,000 L.L'),
@@ -64,12 +64,12 @@ class MenuPage extends StatelessWidget {
           'https://cdn0.iconfinder.com/data/icons/coffee-61/64/hot_coffee_beans_machine-14-512.png',
       name: 'Frappe',
       ourMenuItems: [
-        MenuItem(name: 'Caramel', price: '250,000 L.L'),
-        MenuItem(name: 'Mocha', price: '250,000 L.L'),
-        MenuItem(name: 'White Mocha', price: '250,000 L.L'),
-        MenuItem(name: 'Tiramisu', price: '200,000 L.L'),
-        MenuItem(name: 'Irish', price: '200,000 L.L'),
-        MenuItem(name: 'Coffee Lovers', price: '200,000 L.L'),
+        MenuItem(name: 'Caramel', price: 'M: 250,000 L.L \n L: 350,000 L.L'),
+        MenuItem(name: 'Mocha', price: 'M: 250,000 L.L \n L: 350,000 L.L'),
+        MenuItem(name: 'White Mocha', price: 'M: 250,000 L.L \n L: 350,000 L.L'),
+        MenuItem(name: 'Tiramisu', price: 'M: 250,000 L.L \n L: 350,000 L.L'),
+        MenuItem(name: 'Irish', price: 'M: 250,000 L.L \n L: 350,000 L.L'),
+        MenuItem(name: 'Coffee Lovers', price: 'M: 250,000 L.L \n L: 350,000 L.L'),
       ],
       addsItems: [
         AddsItem(name: 'Syrup', price: '50,000 L.L'),
@@ -83,16 +83,16 @@ class MenuPage extends StatelessWidget {
           'https://cdn.iconscout.com/icon/premium/png-512-thumb/crepe-2757573-2292622.png?f=webp&w=256',
       name: 'Crepe',
       ourMenuItems: [
-        MenuItem(name: 'Nutella', price: '3.4 \$'),
-        MenuItem(name: 'Kinder', price: '3.8 \$'),
-        MenuItem(name: 'Lotus', price: '3.6 \$'),
-        MenuItem(name: "Hershey's", price: '3.8 \$'),
+        MenuItem(name: 'Nutella', price: '300,000 L.L'),
+        MenuItem(name: 'Kinder', price: '350,000 L.L'),
+        MenuItem(name: 'Lotus', price: '350,000 L.L'),
+        MenuItem(name: "Hershey's", price: '350,000 L.L'),
         MenuItem(name: 'Dr. Food\n Flio', price: '2.82 \$'),
         MenuItem(
             name: 'Sushi Crepe\n(Served with cup\nof Chocolate)',
             price: '0.8 \$'),
-        MenuItem(name: 'Fettuccine', price: '5 \$'),
-        MenuItem(name: 'Pancake', price: '5 \$'),
+        MenuItem(name: 'Fettuccine', price: '450,000 L.L'),
+        MenuItem(name: 'Pancake', price: '450,000 L.L'),
       ],
       addsItems: [
         AddsItem(
@@ -167,7 +167,7 @@ class MenuPage extends StatelessWidget {
         MenuItem(name: 'Peach', price: 'M: 200,000 L.L \n L: 300,000 L.L'),
         MenuItem(
             name: 'Dragon Fruit', price: 'M: 200,000 L.L \n L: 300,000 L.L'),
-        MenuItem(name: 'Lemonade', price: 'M: 250,000 L.L \n L: 350,000 L.L'),
+        MenuItem(name: 'Lemonade', price: 'M: 200,000 L.L \n L: 300,000 L.L'),
         MenuItem(
             name: 'Minted\nLemonade',
             price: 'M: 250,000 L.L \n L: 350,000 L.L'),
@@ -178,14 +178,24 @@ class MenuPage extends StatelessWidget {
       name: 'Fresh Juices',
       ourMenuItems: [
         MenuItem(
+            name: 'Avoca',
+            price: 'M: 4.4 \$\n L: 5 \$\n1L: 8 \$'),
+        MenuItem(
             name: 'Cocktail',
-            price: 'M: 200,000 L.L\n L: 300,000 L.L\n1L: 550,000L.L'),
-        MenuItem(name: 'Strawberry', price: 'M: 150,000 L.L\n L: 250,000 L.L'),
-        MenuItem(name: 'Mango', price: 'M: 150,000 L.L\n L: 250,000 L.L'),
+            price: 'M: 2.2 \$\n L: 3.3 \$\n1L: 5 \$'),
+        MenuItem(name: 'Strawberry', price: 'M: 1.7 \$\n L: 2.2 \$\n1L: 3.33 \$'),
+        MenuItem(name: 'Mango', price: 'M: 1.7 \$\n L: 2.2 \$\n1L: 3.8 \$'),
         MenuItem(
             name: 'Orange',
-            price: 'M: 100,000 L.L\n L: 150,000 L.L\n1L: 200,000L.L'),
+            price: 'M: 1.1 \$\n L: 1.66 \$\n1L: 3 \$'),
+        MenuItem(
+            name: 'Carrot',
+            price: 'M: 1.1 \$\n L: 1.66 \$\n1L: 3 \$'),
+        MenuItem(
+            name: 'Achta',
+            price: 'sa7en: 5 \$'),
       ],
+      
       imageUrl:
           'https://cdn.iconscout.com/icon/premium/png-512-thumb/juice-185-357899.png?f=webp&w=256',
       addsItems: [AddsItem(name: ' ', price: ' ')],
@@ -231,9 +241,9 @@ class MenuPage extends StatelessWidget {
             'https://cdn.iconscout.com/icon/premium/png-512-thumb/cupcake-150-503568.png?f=webp&w=256',
         name: 'Cup',
         ourMenuItems: [
-          MenuItem(name: 'Strawberry', price: 'M: 130,000 L.L\nL: 200,000 L.L'),
-          MenuItem(name: 'Cereal', price: 'M: 100,000 L.L\nL: 200,000 L.L'),
-          MenuItem(name: 'Browni', price: 'M: 140,000 L.L\nL: 200,000 L.L'),
+          MenuItem(name: 'Strawberry', price: 'S: 150,000 L.L\nM: 200,000 L.L\nL: 250,000 L.L'),
+          MenuItem(name: 'Cereal', price: 'S: 150,000 L.L\nM: 200,000 L.L\nL: 250,000 L.L'),
+          MenuItem(name: 'Browni', price: 'S: 150,000 L.L\nM: 200,000 L.L\nL: 250,000 L.L'),
           MenuItem(
               name: 'Chocolate Mou', price: 'M: 200,000 L.L\nL: 300,000 L.L'),
           MenuItem(name: 'Karimix', price: 'M: 200,000 L.L\n3L: 00,000 L.L'),
@@ -242,7 +252,8 @@ class MenuPage extends StatelessWidget {
     Category(
         name: 'Ice Cream',
         addsItems: [
-          AddsItem(name: 'Achta', price: '90,000 L.L'),
+          AddsItem(name: 'Add ons', price: '1\$'),
+          AddsItem(name: 'Achta', price: '50,000 L.L'),
           AddsItem(name: 'Cones', price: '50,000 L.L'),
         ],
         ourMenuItems: [
@@ -252,8 +263,8 @@ class MenuPage extends StatelessWidget {
           MenuItem(name: 'One Boule', price: '100,000 L.L'),
           MenuItem(name: 'Achta Cone', price: '300,000 L.L'),
           MenuItem(name: '500 G Mix', price: '450,000 L.L'),
-          MenuItem(name: '1kg Mix', price: '1,080,000 L.L'),
-          MenuItem(name: '1kg Achta', price: '1,260,000 L.L'),
+          MenuItem(name: '1kg Mix', price: '12.5 \$'),
+          MenuItem(name: '1kg Achta', price: '14 \$'),
         ],
         imageUrl:
             'https://cdn.iconscout.com/icon/premium/png-512-thumb/ice-cream-442-978592.png?f=webp&w=256'),
@@ -272,7 +283,9 @@ class MenuPage extends StatelessWidget {
       name: 'Merry Cream',
       ourMenuItems: [
         MenuItem(name: 'Small Cone', price: '100,000 L.L'),
-        MenuItem(name: 'Large Cone', price: '200,000 L.L'),
+        MenuItem(name: 'Meduim Cone', price: '200,000 L.L'),
+        MenuItem(name: 'Large Cone', price: '300,000 L.L'),
+        MenuItem(name: 'Extra Large', price: '350,000 L.L'),
         MenuItem(name: 'Oreo Cup', price: '200,000 L.L'),
         MenuItem(name: 'Lotus Cup', price: '200,000 L.L'),
         MenuItem(name: 'Strawberry Cup', price: '200,000 L.L'),
@@ -281,6 +294,7 @@ class MenuPage extends StatelessWidget {
       imageUrl:
           'https://cdn.iconscout.com/icon/premium/png-512-thumb/ice-cream-2115998-1802281.png?f=webp&w=256',
       addsItems: [
+        AddsItem(name: 'Adds', price: '100,000 L.L'),
         AddsItem(name: 'Fruit', price: '50,000 L.L'),
         AddsItem(name: 'Biscuit', price: '50,000 L.L'),
         AddsItem(name: 'Surup', price: '20,000 L.L'),
