@@ -87,7 +87,6 @@ class MenuPage extends StatelessWidget {
         MenuItem(name: 'Kinder', price: '350,000 L.L'),
         MenuItem(name: 'Lotus', price: '350,000 L.L'),
         MenuItem(name: "Hershey's", price: '350,000 L.L'),
-        MenuItem(name: 'Dr. Food\n Flio', price: '2.82 \$'),
         MenuItem(
             name: 'Sushi Crepe\n(Served with cup\nof Chocolate)',
             price: '0.8 \$'),
@@ -95,25 +94,15 @@ class MenuPage extends StatelessWidget {
         MenuItem(name: 'Pancake', price: '450,000 L.L'),
       ],
       addsItems: [
-        AddsItem(
-          name: 'Snickers, Mars,\nTwix or Kitkat',
-          price: '0.9 \$',
-        ),
-        AddsItem(name: 'Flake', price: '0.57 \$'),
-        AddsItem(name: "M&M's", price: '0.85 \$'),
-        AddsItem(name: 'Galaxy', price: '0.9 \$'),
+        
+        AddsItem(name: 'Nutella or Lotus', price: '1.13 \$'),
+        AddsItem(name: 'Smarties', price: '0.8 \$'),
         AddsItem(name: 'Brownies', price: '0.68 \$'),
-        AddsItem(name: 'Milka Oreo', price: '1.13 \$'),
-        AddsItem(name: 'Nutella or\n Lotus', price: '1.13 \$'),
         AddsItem(name: 'Kinder Bar', price: '0.3 \$'),
-        AddsItem(
-          name: "Peanut Butter\nor Hershey's",
-          price: '1.13 \$',
-        ),
-        AddsItem(name: 'Banana', price: '0.57 \$'),
-        AddsItem(name: 'Strawberry', price: '1.13 \$'),
+        
+        AddsItem(name: 'Fruit', price: '0.57 \$'),
+        AddsItem(name: 'Lotus', price: '0.57 \$'),
         AddsItem(name: 'Oreo', price: '0.57 \$'),
-        AddsItem(name: 'Lotus', price: '0.29 \$'),
       ],
     ),
     Category(
@@ -181,6 +170,9 @@ class MenuPage extends StatelessWidget {
             name: 'Avoca',
             price: 'M: 4.4 \$\n L: 5 \$\n1L: 8 \$'),
         MenuItem(
+            name: 'Cocktail She2af',
+            price: 'M: 4.4 \$\n L: 5 \$\n'),
+        MenuItem(
             name: 'Cocktail',
             price: 'M: 2.2 \$\n L: 3.3 \$\n1L: 5 \$'),
         MenuItem(name: 'Strawberry', price: 'M: 1.7 \$\n L: 2.2 \$\n1L: 3.33 \$'),
@@ -200,42 +192,7 @@ class MenuPage extends StatelessWidget {
           'https://cdn.iconscout.com/icon/premium/png-512-thumb/juice-185-357899.png?f=webp&w=256',
       addsItems: [AddsItem(name: ' ', price: ' ')],
     ),
-    Category(
-        imageUrl:
-            'https://www.pinclipart.com/picdir/big/335-3355980_tiramisu-b-chocolate-cake-clipart.png',
-        name: 'Tiramissu Cakes',
-        ourMenuItems: [
-          MenuItem(name: 'Classic', price: '150,000 L.L'),
-          MenuItem(name: 'Oreo', price: '180,000 L.L'),
-          MenuItem(name: 'Kinder & Lotus', price: '200,000 L.L'),
-        ],
-        addsItems: []),
-    Category(
-        imageUrl:
-            'https://cdn.iconscout.com/icon/premium/png-512-thumb/cheesecake-1616885-1372392.png?f=webp&w=256',
-        name: 'CheeseCake',
-        ourMenuItems: [
-          MenuItem(name: 'Lotus', price: '200,000 L.L'),
-          MenuItem(name: 'Snickers', price: '200,000 L.L'),
-          MenuItem(name: 'Strawberry', price: '200,000 L.L'),
-          MenuItem(name: 'Oreo', price: '200,000 L.L'),
-          MenuItem(name: 'Kinder', price: '200,000 L.L'),
-          MenuItem(name: 'Galaxy', price: '200,000 L.L'),
-        ],
-        addsItems: []),
-    Category(
-        imageUrl:
-            'https://cdn.iconscout.com/icon/premium/png-512-thumb/cheesecake-1616885-1372392.png?f=webp&w=256',
-        name: 'Special\nCheeseCake',
-        ourMenuItems: [
-          MenuItem(name: 'Lotus', price: '250,000 L.L'),
-          MenuItem(name: 'Snickers', price: '250,000 L.L'),
-          MenuItem(name: 'Strawberry', price: '250,000 L.L'),
-          MenuItem(name: 'Oreo', price: '250,000 L.L'),
-          MenuItem(name: 'Kinder', price: '250,000 L.L'),
-          MenuItem(name: 'Galaxy', price: '250,000 L.L'),
-        ],
-        addsItems: []),
+    
     Category(
         imageUrl:
             'https://cdn.iconscout.com/icon/premium/png-512-thumb/cupcake-150-503568.png?f=webp&w=256',
