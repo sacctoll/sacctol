@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
 
 class MenuPage extends StatelessWidget {
   final List<Category> categories = [
+    ///////
     Category(
       imageUrl:
           'https://cdn2.iconfinder.com/data/icons/coffee-break/64/Coffee_Cup_starbuck_hot_-512.png',
