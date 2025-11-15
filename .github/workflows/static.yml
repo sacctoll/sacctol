@@ -41,7 +41,12 @@ jobs:
         uses: cedvdb/action-flutter-build-web@v1
         with:
           working-directory: './'
-          build-cmd: flutter build web --output="menu" --base-href="/sacctol/"
+          build-cmd: flutter build web --base-href="/sacctol/"
+          
+      - name: Copy to docs folder
+        run: |
+          mkdir -p docs
+          cp -r build/web/* docs/
        
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -49,8 +54,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: 'menu/'
+          # Upload docs folder
+          path: 'docs/'
                   
       - name: Deploy to GitHub Pages
         id: deployment
