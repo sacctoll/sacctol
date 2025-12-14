@@ -109,41 +109,52 @@ class _AnimatedMenuItemState extends State<AnimatedMenuItem>
               width: 1,
             ),
           ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                flex: 2,
-                child: Text(
-                  widget.name,
-                  style: AppTheme.bodyLarge,
-                  maxLines: 3,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ),
-              const SizedBox(width: AppTheme.spacingM),
-              Expanded(
-                flex: 1,
-                child: Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: AppTheme.spacingS,
-                    vertical: AppTheme.spacingXS,
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              // Check if screen is small (phone)
+              final isSmallScreen = constraints.maxWidth < 400;
+              
+              return Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    flex: isSmallScreen ? 3 : 2,
+                    child: Text(
+                      widget.name,
+                      style: AppTheme.bodyLarge,
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ),
-                  decoration: BoxDecoration(
-                    gradient: AppTheme.primaryGradient,
-                    borderRadius: BorderRadius.circular(8),
+                  SizedBox(width: isSmallScreen ? AppTheme.spacingS : AppTheme.spacingM),
+                  Flexible(
+                    flex: isSmallScreen ? 2 : 1,
+                    child: Container(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: isSmallScreen ? AppTheme.spacingXS : AppTheme.spacingS,
+                        vertical: AppTheme.spacingXS,
+                      ),
+                      decoration: BoxDecoration(
+                        gradient: AppTheme.primaryGradient,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text(
+                        widget.price,
+                        style: AppTheme.priceText.copyWith(
+                          color: Colors.white,
+                          fontSize: isSmallScreen ? 11 : 13,
+                          height: 1.3,
+                        ),
+                        textAlign: TextAlign.center,
+                        softWrap: true,
+                        overflow: TextOverflow.visible,
+                      ),
+                    ),
                   ),
-                  child: Text(
-                    widget.price,
-                    style: AppTheme.priceText.copyWith(color: Colors.white),
-                    textAlign: TextAlign.center,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                ),
-              ),
-            ],
+                ],
+              );
+            },
           ),
         ),
       ),
