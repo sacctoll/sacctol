@@ -152,10 +152,10 @@ class AppData {
         name: 'Cup\'s',
         description: 'Sweet cups based on your favorite flavor',
         ourMenuItems: [
-          MenuItem(name: 'Browni', price: 'M: 200,000 L.L\nL: 250,000 L.L'),
+          MenuItem(name: 'Browni', price: 'S: 200,000 L.L\nM: 250,000 L.L\nL: 300,000 L.L'),
           MenuItem(name: 'Chocolate Mou', price: 'M: 250,000 L.L\nL: 350,000 L.L'),
-          MenuItem(name: 'Cereal', price: 'M: 200,000 L.L\nL: 250,000 L.L'),
-          MenuItem(name: 'Strawberry', price: 'M: 250,000 L.L\nL: 350,000 L.L'),
+          MenuItem(name: 'Cereal', price: 'S: 200,000 L.L\nM: 250,000 L.L\nL: 300,000 L.L'),
+          MenuItem(name: 'Strawberry', price: 'S: 200,000 L.L\nM: 250,000 L.L\nL: 300,000 L.L'),
           MenuItem(name: 'Oreo', price: 'M: 250,000 L.L\nL: 350,000 L.L'),
           MenuItem(name: 'Kinder', price: 'M: 250,000 L.L\nL: 350,000 L.L'),
         ],
